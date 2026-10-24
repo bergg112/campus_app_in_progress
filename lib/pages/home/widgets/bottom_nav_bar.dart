@@ -47,6 +47,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
       PageItem.feed,
       PageItem.events,
       PageItem.mensa,
+      PageItem.curatorial, // <-- ADDED THIS HERE
       PageItem.navigation,
       PageItem.wallet,
       PageItem.more,
@@ -181,6 +182,16 @@ class _BottomNavBarState extends State<BottomNavBar> {
                                     imagePathInactive: 'assets/img/icons/mensa-outlined.png',
                                     onTap: () => widget.onSelectedPage(PageItem.mensa),
                                     isActive: widget.currentPage == PageItem.mensa,
+                                  );
+                                // ---> ADDED CURATORIAL CASE HERE <---
+                                case PageItem.curatorial:
+                                  return BottomNavBarItem(
+                                    title: 'Art',
+                                    // Using the 'more' icon as a temporary placeholder since we don't have custom art assets yet
+                                    imagePathActive: 'assets/img/icons/more.png',
+                                    imagePathInactive: 'assets/img/icons/more.png',
+                                    onTap: () => widget.onSelectedPage(PageItem.curatorial),
+                                    isActive: widget.currentPage == PageItem.curatorial,
                                   );
                                 case PageItem.navigation:
                                   return BottomNavBarItem(
