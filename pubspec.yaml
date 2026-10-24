@@ -13,6 +13,11 @@ dependencies:
   envied: ^1.1.1
   flutter_native_splash: ^2.4.2
   flutter_html: ^3.0.0-alpha.5
+  image_picker: ^1.0.4
+  flutter_image_compress: ^2.1.0
+  cached_network_image: ^3.3.0
+  firebase_storage: ^11.4.1
+  uuid: ^4.2.1
   flutter_secure_storage: ^9.2.2
   provider: ^6.1.1
   flutter_svg: ^2.0.14
