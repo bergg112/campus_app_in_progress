@@ -22,7 +22,7 @@ dependencies:
   flutter_svg: ^2.0.14
   xml: ^6.3.0
   animations: ^2.0.8
-  page_transition: ^2.1.0
+  page_transition: ^3.1.0
   cached_network_image: ^3.4.1
   cookie_jar: ^4.0.8
   dartz: ^0.10.1
